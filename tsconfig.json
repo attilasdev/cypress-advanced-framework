@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["es5", "dom"],
+      "types": ["cypress", "node"],
+      "baseUrl": "./",
+      "paths": {
+        "@pages/*": ["cypress/support/pages/*"],
+        "@helpers/*": ["cypress/support/helpers/*"],
+        "@fixtures/*": ["cypress/fixtures/*"]
+      },
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "moduleResolution": "Node16",
+      "module": "Node16"
+    },
+    "include": ["**/*.ts", "mock-server/server.js"]
+  }
